@@ -1,0 +1,179 @@
+/* Import custom font */
+@font-face {
+  font-family: 'MovementDirectThin';
+  src: url('../fonts/Movement-DirectThin.woff2') format('woff2'),
+       url('../fonts/Movement-DirectThin.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* General */
+body, html {
+  height: 100%;
+  margin: 0;
+  
+}
+
+/* Full Background Image */
+.bg-full {
+    
+    position: relative;
+  background-image: url('../img/sea-scape.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 20px;
+  
+ 
+  
+}
+
+
+.right-overlay-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  /* max-width: 400px; */
+  z-index: 2;       /* Make sure it's on top of background */
+  pointer-events: none; /* So it doesn't block clicks */
+}
+.nav-link {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 55%; /* controls the underline length */
+  height: 3px; /* controls thickness */
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  background-color: #F8E928;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #F8E928 !important;
+}
+
+
+
+
+
+
+
+
+/* Hero Styles */
+.hero-title {
+  font-size: 126px;
+  line-height: 123px;
+  width: 498px;
+  height: 246px;
+  font-family: 'MovementDirectThin', sans-serif;
+}
+
+.hero-logo {
+  width: 195px;
+  height: 195px;
+  object-fit: contain;
+}
+
+.hero-heading {
+  flex-wrap: nowrap;
+}
+
+
+.hero-desc {
+  width: 648px;
+  font-size: 18px;
+  line-height: 26px;
+  color: #eeeeee;
+  font-family: 'Work Sans', sans-serif;
+}
+
+
+.black-btn{
+ width: 210px;
+ height: 53px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background-color: black;
+  color: #F8E928;
+  border: none;
+  border-radius: 0px;
+  transition: background-color 0.3s ease;
+  
+}
+
+
+
+
+.hero-section {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+              url('../img/city-scape.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+
+
+.hero-title {
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.hero-desc {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-left: auto;
+}
+
+
+
+.hero-section.left-align {
+      background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+        url('../img/snow-scape-mountains.webp') no-repeat center center;
+      background-size: cover;
+    }
+
+
+
+.bg-desert{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+              url('../img/safari-scape.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+
+
+@media (max-width: 768px) {
+      .hero-title {
+        font-size: 2.5rem;
+      }
+
+      .hero-logo {
+        width: 50px;
+        height: 50px;
+      }
+
+      .right-overlay-img {
+        display: none;
+      }
+    }
