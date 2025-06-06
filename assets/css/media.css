@@ -40,6 +40,16 @@
 
    }
 
+   .hero-side-image {
+    position: absolute;
+    top: -174px;
+    right: -507px;
+    max-width: 661px;
+    height: auto;
+    z-index: 2;
+    pointer-events: none;
+}
+
    .hide-on-mobile {
      display: none !important;
    }
