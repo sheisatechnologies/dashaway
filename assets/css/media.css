@@ -1,0 +1,167 @@
+@media (max-width: 768px) {
+
+
+   .mobile-logo {
+     margin-top: -63px;
+     margin-left: -9px;
+   }
+
+   .menu-cross {
+     margin-top: -62px;
+     margin-right: 14px;
+   }
+
+   .navbar-dark .navbar-toggler {
+     color: white;
+     border-color: transparent;
+   }
+
+   .hero-title {
+     font-size: 64px;
+     display: flex !important;
+     flex-direction: row !important;
+     align-items: center !important;
+     justify-content: flex-start;
+   }
+
+
+
+   .hero-desc {
+     font-size: 16px;
+
+   }
+
+
+
+   .hero-icon {
+     width: 161px;
+     height: 161px;
+
+
+   }
+
+   .hide-on-mobile {
+     display: none !important;
+   }
+
+   /* .black-btn{
+        
+       max-width: 174px;
+ max-height: 44px;
+ font-size: 12px;
+ 
+    }
+
+     .yellow-btn{
+        
+       max-width: 174px;
+ max-height: 44px;
+ font-size: 12px;
+ 
+    } */
+
+    .footer .logo img {
+    margin-left: -42px;
+}
+
+
+.partner-logos {
+    margin-top: 30px;
+    margin-left: -3px;
+    gap: 3px;
+}
+
+   .partner-logos img {
+     text-align: center;
+     margin-right: 20px;
+   }
+
+   .footer .row>div {
+     text-align: left;
+     margin-top: 20px;
+
+   }
+
+   .footer {
+     background-color: #000;
+     color: #aaa;
+     padding: 30px 0 80px 0;
+     /* top 60px, right 0, bottom 120px, left 0 */
+     font-size: 14px;
+   }
+
+   .logo-bottom {
+    font-size: 16px;
+    color: #666666;
+    margin-left: -3px;
+}
+
+
+
+ }
+
+ #mobileMenu {
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background: black;
+   z-index: 9999;
+   display: none;
+   flex-direction: column;
+   justify-content: start;
+   padding-top: 60px;
+ }
+
+ .mobile-menu-body a {
+   display: block;
+   color: white;
+   font-size: 18px;
+   padding: 25px 0;
+   text-decoration: none;
+ }
+
+ .mobile-menu-body .active {
+   color: #fcdc00;
+ }
+
+ .mobile-menu-body hr {
+   background-color: #333;
+   margin: 0;
+ }
+
+ #menuToggle {
+   display: none;
+ }
+
+ @media (max-width: 991.98px) {
+   #menuToggle {
+     display: block;
+     color: white;
+     font-size: 28px;
+     cursor: pointer;
+   }
+
+ }
+
+
+ @media (max-width: 767px) {
+  .info-box {
+    flex: 1 1 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

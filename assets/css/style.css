@@ -1,179 +1,308 @@
-/* Import custom font */
-@font-face {
-  font-family: 'MovementDirectThin';
-  src: url('../fonts/Movement-DirectThin.woff2') format('woff2'),
-       url('../fonts/Movement-DirectThin.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
+ /* Import custom font */
+ @font-face {
+   font-family: 'MovementDirectThin';
+   src: url('../fonts/Movement-DirectThin.woff2') format('woff2'),
+     url('../fonts/Movement-DirectThin.otf') format('opentype');
+   font-weight: normal;
+   font-style: normal;
+ }
 
-/* General */
-body, html {
-  height: 100%;
-  margin: 0;
+ body,
+ html {
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+ }
+
+ /*---------------- home page css-------------------- */
+ /* header css */
+
+ .navbar {
+   position: absolute;
+   width: 100%;
+   z-index: 10;
+ }
+
+ .navbar-brand {
+   font-weight: bold;
+   color: white;
+ }
+
+ .navbar-nav .nav-link {
+   color: white !important;
+ }
+
+
+ .navbar .nav-link {
+   color: white !important;
+   position: relative;
+   text-decoration: none;
+   transition: color 0.3s ease;
+ }
+
+ 
+ .navbar .nav-link:hover {
+   color: #F8E928 !important;
+ }
+
+ .navbar .nav-link:hover::after {
+   content: '';
+   position: absolute;
+   bottom: -4px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 43px;
+   height: 4px;
+   background-color: #F8E928;
+ }
+
+ 
+ .navbar .nav-link.active {
+   color: #F8E928 !important;
+ }
+
+ .navbar .nav-link.active::after {
+   content: '';
+   position: absolute;
+   bottom: -4px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 43px;
+   height: 4px;
+   background-color: #F8E928;
+ }
+
+.navbar-nav .nav-item {
+   margin-right: 2rem;
+ }
+
+/* hero section css */
+
+ .hero-section {
+   position: relative;
+   background-size: cover;
+   background-position: center;
+   min-height: 100vh;
+   color: white;
+   display: flex;
+   align-items: center;
+ }
+
+ .overlay {
+   background: rgba(0, 0, 0, 0.4);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+ }
+
+ .hero-content {
+   position: relative;
+   z-index: 2;
+ }
+
+ .hero-title {
+   font-size: 123px;
+   font-weight: 300;
+   font-family: 'MovementDirectThin', sans-serif;
+   color: #fff;
+
+ }
+
+ .first-line {
+   display: flex;
+   align-items: center;
+
+ }
+
+ .second-line {
+   margin-top: -40px;
   
+
+ }
+
+ .hero-icon {
+   width: 195px;
+   height: 195px;
+   flex-shrink: 0;
+ }
+
+
+
+ .btn-yellow {
+   background-color: #fcdc00;
+   color: #000;
+   border: none;
+ }
+
+ .black-btn {
+   width: 100%;
+   max-width: 210px;
+   max-height: 53px;
+   font-size: 13px;
+   font-weight: bold;
+   letter-spacing: 3px;
+   text-transform: uppercase;
+   background-color: black;
+   color: #F8E928;
+   border: none;
+   border-radius: 0px;
+   transition: background-color 0.3s ease;
+ }
+
+ .yellow-btn {
+   width: 100%;
+   max-width: 210px;
+   max-height: 53px;
+   font-size: 13px;
+   font-weight: bold;
+   letter-spacing: 3px;
+   text-transform: uppercase;
+   background-color: #F8E928;
+   color: black;
+   border: none;
+   border-radius: 0px;
+   transition: background-color 0.3s ease;
+ }
+
+ /* Footer */
+.footer {
+  background-color: #000;
+  color: #aaa;
+  padding: 60px 0 200px 0;
+  font-size: 14px;
 }
 
-/* Full Background Image */
-.bg-full {
-    
-    position: relative;
-  background-image: url('../img/sea-scape.jpg');
+.footer .logo {
+  font-weight: bold;
+  color: white;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: left;      /* Ensures logo is aligned left */
+  margin-left: 5px;
+}
+
+.footer .logo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.footer .footer-links a {
+  
+  color: #666666;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 16px; /* Increased from 10px for more gap */
+  transition: color 0.3s ease;
+
+
+}
+
+.footer .footer-links a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.partner-logos {
+  margin-top: 30px;
+  margin-left: 43px;
+  gap: 35px; /* Increase the gap between logos */ 
+}
+
+.partner-logos img {
+  height: 49px;
+ 
+}
+
+
+.logo-bottom{
+  font-size: 16px;
+  color: #666666;
+  margin-left: 42px;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------- contact css start------------ */
+
+.hero-section-contact {
+  position: relative;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  padding-bottom: 20px;
-  
- 
-  
-}
-
-
-.right-overlay-img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  /* max-width: 400px; */
-  z-index: 2;       /* Make sure it's on top of background */
-  pointer-events: none; /* So it doesn't block clicks */
-}
-.nav-link {
-  position: relative;
-  color: white;
-  text-decoration: none;
-  padding-bottom: 4px;
-  transition: color 0.3s ease;
-}
-
-.nav-link::after {
-  content: "";
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 55%; /* controls the underline length */
-  height: 3px; /* controls thickness */
-  background-color: transparent;
-  transition: background-color 0.3s ease;
-}
-
-.nav-link:hover::after,
-.nav-link.active::after {
-  background-color: #F8E928;
-}
-
-.nav-link:hover,
-.nav-link.active {
-  color: #F8E928 !important;
-}
-
-
-
-
-
-
-
-
-/* Hero Styles */
-.hero-title {
-  font-size: 126px;
-  line-height: 123px;
-  width: 498px;
-  height: 246px;
-  font-family: 'MovementDirectThin', sans-serif;
-}
-
-.hero-logo {
-  width: 195px;
-  height: 195px;
-  object-fit: contain;
-}
-
-.hero-heading {
-  flex-wrap: nowrap;
-}
-
-
-.hero-desc {
-  width: 648px;
-  font-size: 18px;
-  line-height: 26px;
-  color: #eeeeee;
-  font-family: 'Work Sans', sans-serif;
-}
-
-
-.black-btn{
- width: 210px;
- height: 53px;
-  font-size: 13px;
-  font-weight: bold;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  background-color: black;
-  color: #F8E928;
-  border: none;
-  border-radius: 0px;
-  transition: background-color 0.3s ease;
-  
-}
-
-
-
-
-.hero-section {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-              url('../img/city-scape.jpg') no-repeat center center;
-  background-size: cover;
-  min-height: 100vh;
+  min-height: 120vh;
   padding-top: 80px;
   padding-bottom: 80px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+
+.contact-info-boxes {
+  gap: 5px;
+}
+
+.info-box {
+ flex: 1 1 45%;
+  background: rgba(0, 0, 0, 0.5); /* transparent black */
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0px;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.info-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+
+.form-control {
+    display: block;
+    width: 100%;
+    max-width: 636px;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0px ;
+   
 }
 
 
 
-.hero-title {
-  font-weight: 600;
-  line-height: 1.1;
-}
-
-.hero-desc {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  max-width: 600px;
-  margin-left: auto;
-}
 
 
-
-.hero-section.left-align {
-      background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-        url('../img/snow-scape-mountains.webp') no-repeat center center;
-      background-size: cover;
-    }
-
-
-
-.bg-desert{
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-              url('../img/safari-scape.jpg') no-repeat center center;
+/* privacy css start */
+.hero-section-privacy {
+  position: relative;
   background-size: cover;
+  background-position: center;
+  min-height: 65vh; /* Half the screen height */
+  color: white;
+  display: flex;
+  align-items: center;
 }
-
-
-
-@media (max-width: 768px) {
-      .hero-title {
-        font-size: 2.5rem;
-      }
-
-      .hero-logo {
-        width: 50px;
-        height: 50px;
-      }
-
-      .right-overlay-img {
-        display: none;
-      }
-    }
