@@ -17,17 +17,17 @@
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-dark py-md-5 py-3">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="assets/img/dash-away-logo.svg" alt="">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/dash-away-logo.svg" alt="" class="nav-logo">
             </a>
-            <button class="navbar-toggler" type="button" id="menuToggle">
-                <span class="navbar-toggler-icon"></span>
+            <button id="menuToggle" class="border-0 bg-transparent d-lg-none" type="button" style="cursor: pointer;">
+                <img id="menuIcon" src="assets/img/mobile-menu.svg" alt="Menu" width="30" height="30">
             </button>
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav gap-5">
                     <li class="nav-item">
-                        <a class="nav-link " href="index.html">Home</a>
+                        <a class="nav-link active" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Top Picks</a>
@@ -36,7 +36,7 @@
                         <a class="nav-link" href="#">Testimonials</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
 
@@ -49,8 +49,11 @@
     <div id="mobileMenu" class="d-lg-none">
         <div class="mobile-menu-header d-flex justify-content-between align-items-center px-4 pt-4 pb-4">
             <div class="logo text-white mobile-logo">
-                <img src="assets/img/dash-away-logo.svg" alt="">
+                <a href="index.html">
+                    <img src="assets/img/dash-away-logo.svg" alt="" class="nav-logo">
+                </a>
             </div>
+
             <div id="menuClose" class="text-white h2 menu-cross">&times;</div>
         </div>
         <div class="mobile-menu-body px-4 py-5">
@@ -74,7 +77,7 @@
         <div class="container hero-content text-left pt-5">
             <div class="col-md-7 px-4 mt-5">
                 <h1 class="hero-title d-block d-md-none">
-                   PRIVACY POLICY
+                    PRIVACY POLICY
                 </h1>
                 <h1 class="hero-title hide-on-mobile mb-4 pt-5">
                     <div class="first-line">
@@ -82,7 +85,7 @@
                     </div>
                     <div class="second-line">POLICY</div>
                 </h1>
-               
+
             </div>
         </div>
     </section>
@@ -90,77 +93,107 @@
 
 
     <!-- White Content Section -->
-<section class="privacy-content-section py-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 px-5">
-        <h3 class="priv-head">Information that is gathered from visitors</h3>
-        <p class="prive-desc">In common with other websites, log files are stored on the web server saving details such as the visitor’s IP address, browser type, referring page and time of visit. Cookies may be used to remember visitor preferences when interacting with the website.</p>
-        <p class="prive-desc mt-4">Where registration is required, the visitor’s email and a username will be stored on the server.
-How the Information is used</p>
-<p class="prive-desc mt-4">The information is used to enhance the visitor’s experience when using the website to display personalised content and possibly advertising. E-mail addresses will not be sold, rented or leased to third parties. E-mail may be sent to inform you of news of our services or offers by us or our affiliates.</p>
+    <section class="privacy-content-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 px-5">
+                    <h3 class="priv-head">Information that is gathered from visitors</h3>
+                    <p class="prive-desc">In common with other websites, log files are stored on the web server saving
+                        details such as the visitor’s IP address, browser type, referring page and time of visit.
+                        Cookies may be used to remember visitor preferences when interacting with the website.</p>
+                    <p class="prive-desc mt-4">Where registration is required, the visitor’s email and a username will
+                        be stored on the server.
+                        How the Information is used</p>
+                    <p class="prive-desc mt-4">The information is used to enhance the visitor’s experience when using
+                        the website to display personalised content and possibly advertising. E-mail addresses will not
+                        be sold, rented or leased to third parties. E-mail may be sent to inform you of news of our
+                        services or offers by us or our affiliates.</p>
 
-        <h3 class="priv-head mt-4">Visitor Options</h3>
-        <p class="prive-desc">
-         If you have subscribed to one of our services, you may unsubscribe by following the instructions which are included in e-mail that you receive.
-        </p>
-        <p class="prive-desc mt-4">You may be able to block cookies via your browser settings but this may prevent you from access to certain features of the website.</p>
+                    <h3 class="priv-head mt-4">Visitor Options</h3>
+                    <p class="prive-desc">
+                        If you have subscribed to one of our services, you may unsubscribe by following the instructions
+                        which are included in e-mail that you receive.
+                    </p>
+                    <p class="prive-desc mt-4">You may be able to block cookies via your browser settings but this may
+                        prevent you from access to certain features of the website.</p>
 
-        <h3 class=" priv-head mt-4">Cookies</h3>
-        <p class="prive-desc">
-          Cookies are small digital signature files that are stored by your web browser that allow your preferences to be recorded when visiting the website. Also they may be used to track your return visits to the website. Third party advertising companies may also use cookies for tracking purposes. You can read more on our Cookie Policy page.
-        </p>
+                    <h3 class=" priv-head mt-4">Cookies</h3>
+                    <p class="prive-desc">
+                        Cookies are small digital signature files that are stored by your web browser that allow your
+                        preferences to be recorded when visiting the website. Also they may be used to track your return
+                        visits to the website. Third party advertising companies may also use cookies for tracking
+                        purposes. You can read more on our Cookie Policy page.
+                    </p>
 
-        <h3 class="priv-head mt-4">Google Ads</h3>
-        <p class="prive-desc">
-         Google, as a third party vendor, uses cookies to serve ads. Google’s use of the DART cookie enables it to serve ads to visitors based on their visit to sites they visit on the Internet. Website visitors may opt out of the use of the DART cookie by visiting the Google ad and content network privacy policy.
-        </p>
-
-
-         <h3 class="priv-head mt-4">General Data Protection Regulation (GDPR) Compliance</h3>
-        <p class="prive-desc">
-         We have updated our privacy policy and cookie policy in line with GDPR compliance. We take privacy and security extremely seriously. When a visitor uses the contact form on our website, we will only use the information to contact you about the message you have sent. We will not add you to any email marketing lists. We will not give, share or sell your data to anyone else
-        </p>
-        <p class="prive-desc mt-4">
-        We use Google Analytics to record visitors and pages visited on the website. Data recorded includes:
-        </p>
-
-        <h3 class="priv-head mt-4">Page Information</h3>
-        <p class="prive-desc">
-         URL – the URL of the page the user is viewing<br>Title – the title of the page the user is viewing
-        </p>
-
-
-        <h3 class="priv-head mt-4">Browser Information</h3>
-        <p class="prive-desc">
-         Browser name – the browser the user is using<br>Viewport or Viewing pane – the size of the browser window<br>Screen resolution – the resolution of the user’s screen<br>Java enabled – whether or not the user has Java enabled
-        </p>
+                    <h3 class="priv-head mt-4">Google Ads</h3>
+                    <p class="prive-desc">
+                        Google, as a third party vendor, uses cookies to serve ads. Google’s use of the DART cookie
+                        enables it to serve ads to visitors based on their visit to sites they visit on the Internet.
+                        Website visitors may opt out of the use of the DART cookie by visiting the Google ad and content
+                        network privacy policy.
+                    </p>
 
 
-         <h3 class="priv-head mt-4">User Information</h3>
-        <p class="prive-desc">
-        Location – this is derived from the IP address where the hit originated. The IP address itself is not available in Google <br>Analytics as it is personally identifiable information (PII) which violates the terms of Google Analytics.<br>Language – derived from the language settings of the browser
-        </p>
+                    <h3 class="priv-head mt-4">General Data Protection Regulation (GDPR) Compliance</h3>
+                    <p class="prive-desc">
+                        We have updated our privacy policy and cookie policy in line with GDPR compliance. We take
+                        privacy and security extremely seriously. When a visitor uses the contact form on our website,
+                        we will only use the information to contact you about the message you have sent. We will not add
+                        you to any email marketing lists. We will not give, share or sell your data to anyone else
+                    </p>
+                    <p class="prive-desc mt-4">
+                        We use Google Analytics to record visitors and pages visited on the website. Data recorded
+                        includes:
+                    </p>
 
-        <h3 class="priv-head mt-4">SSL Certificate</h3>
-        <p class="prive-desc">
-        We use Secure Sockets Layer (SSL). SSL provides a secure communication channel between your device’s browser and our web server. This turns a website’s address from HTTP to HTTPS, the ‘S’ standing for ‘secure’. This is particularly important when submitting your details via our contact form. Anyone intercepting this communication will not be able to decrypt the data between the two devices.
-        </p>
+                    <h3 class="priv-head mt-4">Page Information</h3>
+                    <p class="prive-desc">
+                        URL – the URL of the page the user is viewing<br>Title – the title of the page the user is
+                        viewing
+                    </p>
 
-        <h3 class="priv-head mt-4">
-The Right to be Forgotten</h3>
-        <p class="prive-desc">
-       If you wish to request to be provided with full exposure of what data is held about you and the process for you to request it is completely removed from the our system – aka ‘the Right to be Forgotten’, email our Data Protection Officer.
-        </p>
-        
-       
-        
 
-        <!-- Add more sections as needed based on your privacy content -->
-      </div>
-    </div>
-  </div>
-</section>
+                    <h3 class="priv-head mt-4">Browser Information</h3>
+                    <p class="prive-desc">
+                        Browser name – the browser the user is using<br>Viewport or Viewing pane – the size of the
+                        browser window<br>Screen resolution – the resolution of the user’s screen<br>Java enabled –
+                        whether or not the user has Java enabled
+                    </p>
+
+
+                    <h3 class="priv-head mt-4">User Information</h3>
+                    <p class="prive-desc">
+                        Location – this is derived from the IP address where the hit originated. The IP address itself
+                        is not available in Google <br>Analytics as it is personally identifiable information (PII)
+                        which violates the terms of Google Analytics.<br>Language – derived from the language settings
+                        of the browser
+                    </p>
+
+                    <h3 class="priv-head mt-4">SSL Certificate</h3>
+                    <p class="prive-desc">
+                        We use Secure Sockets Layer (SSL). SSL provides a secure communication channel between your
+                        device’s browser and our web server. This turns a website’s address from HTTP to HTTPS, the ‘S’
+                        standing for ‘secure’. This is particularly important when submitting your details via our
+                        contact form. Anyone intercepting this communication will not be able to decrypt the data
+                        between the two devices.
+                    </p>
+
+                    <h3 class="priv-head mt-4">
+                        The Right to be Forgotten</h3>
+                    <p class="prive-desc">
+                        If you wish to request to be provided with full exposure of what data is held about you and the
+                        process for you to request it is completely removed from the our system – aka ‘the Right to be
+                        Forgotten’, email our Data Protection Officer.
+                    </p>
+
+
+
+
+                    <!-- Add more sections as needed based on your privacy content -->
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -218,15 +251,24 @@ The Right to be Forgotten</h3>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         const menuToggle = document.getElementById('menuToggle');
+        const menuIcon = document.getElementById('menuIcon');
         const mobileMenu = document.getElementById('mobileMenu');
         const menuClose = document.getElementById('menuClose');
 
         menuToggle.addEventListener('click', () => {
-            mobileMenu.style.display = 'flex';
+            mobileMenu.classList.add('active');
+            menuIcon.classList.remove('fast-close');
+            menuIcon.classList.add('slow-open');
         });
 
         menuClose.addEventListener('click', () => {
-            mobileMenu.style.display = 'none';
+            mobileMenu.classList.remove('active');
+            menuIcon.classList.remove('slow-open');
+            menuIcon.classList.add('fast-close');
+
+            setTimeout(() => {
+                menuIcon.classList.remove('fast-close');
+            }, 300);
         });
     </script>
 
