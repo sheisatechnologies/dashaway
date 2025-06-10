@@ -28,16 +28,16 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav gap-5">
           <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home</a>
+            <a class="nav-link  active" href="index.html"><span class="link-text">Home</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Top Picks</a>
+            <a class="nav-link" href="#"><span class="link-text">Top Picks</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Testimonials</a>
+            <a class="nav-link" href="#"><span class="link-text">Testimonials</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="contact.html"><span class="link-text">Contact</span></a>
           </li>
         </ul>
 
@@ -55,9 +55,16 @@
         </a>
       </div>
 
-      <div id="menuClose" class="text-white h2 menu-cross">&times;</div>
+      <div id="menuClose" class="menu-cross">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </div>
+
     </div>
-    <div class="mobile-menu-body px-4 py-5">
+    <div class="mobile-menu-body px-5 py-5">
       <hr>
       <a href="index.html" class="menu-item active">Home</a>
       <hr>
@@ -73,11 +80,11 @@
 
 
   <!-- Section 1 -->
-  <section class="hero-section" style="background-image: url('assets/img/sea-scape.jpg');">
+  <section class="hero-section hero-section-sea">
 
     <div class="container hero-content text-left mt-5 py-5">
       <div class="col-md-8 px-4 py-5 mt-5">
-        <h1 class="hero-title d-block d-md-none">
+        <h1 class="hero-title d-block d-md-none px-1">
           DREAM HOLIDAY
           <img src="assets/img/icons/sun.svg" class="hero-icon" alt="icon" />
         </h1>
@@ -99,13 +106,13 @@
   </section>
 
   <!-- Section 2 -->
-  <section class="hero-section" style="background-image: url('assets/img/city-scape.jpg');">
+  <section class="hero-section hero-section-city">
 
     <!-- Left overlay PNG -->
     <img src="assets/img/city-scape-building.png" alt="Left overlay" class="full-overlay-png left-png " />
     <div class="container hero-content text-left">
       <div class="col-md-8 ml-auto px-4">
-        <h1 class="hero-title d-block d-md-none">
+        <h1 class="hero-title d-block d-md-none px-1">
           CITY BREAK
           <img src="assets/img/icons/city.svg" class="hero-icon hero-icon-left" alt="icon" />
         </h1>
@@ -125,13 +132,13 @@
   </section>
 
   <!-- Section 3 -->
-  <section class="hero-section" style="background-image: url('assets/img/snow-scape.jpg');">
+  <section class="hero-section hero-section-moun">
 
     <!-- PNG overlay, below text -->
     <img src="assets/img/snow-scape-mountains.webp" alt="Full background overlay" class="full-overlay-png" />
     <div class="container hero-content text-left">
       <div class="col-md-8 px-4">
-        <h1 class="hero-title d-block d-md-none text-dark">
+        <h1 class="hero-title d-block d-md-none text-dark text-mob-white px-1">
           APRES SKI
           <img src="assets/img/icons/mountain.svg" class="hero-icon hero-icon-left" alt="icon" />
         </h1>
@@ -153,14 +160,14 @@
   </section>
 
   <!-- Section 4 -->
-  <section class="hero-section" style="background-image: url('assets/img/safari-scape.jpg');">
+  <section class="hero-section hero-section-safari">
 
     <!-- Left overlay PNG -->
     <img src="assets/img/safari-scape-tree.png" alt="Left overlay" class="full-overlay-png left-png" />
 
     <div class="container hero-content text-left">
       <div class="col-md-8 ml-auto px-4">
-        <h1 class="hero-title d-block d-md-none ">
+        <h1 class="hero-title d-block d-md-none px-1">
           DISCOVER SAFARI
           <img src="assets/img/icons/elephant.svg" class="hero-icon" alt="icon" />
         </h1>
@@ -171,7 +178,7 @@
           </div>
           <div class="second-line">SAFARI</div>
         </h1>
-        <p class="hero-desc text-dark px-2">Unforgettable safari holidays tailored to your sense of adventure
+        <p class="hero-desc text-dark px-2 text-mob-white">Unforgettable safari holidays tailored to your sense of adventure
           and budget, perfect for families and couples seeking a wild escape. From spotting the Big Five in
           the African savanna to exploring lush jungles, we handle every detail; lodges, guides, and
           itineraries — so you can immerse yourself in nature’s wonders hassle-free.</p>
@@ -194,9 +201,9 @@
           </div>
           <div class="logo-bottom mb-3">©2025 Dashaway</div>
           <div class="partner-logos d-flex gap-3 mb-4 mb-md-0">
-            <img src="assets/img/icons/logo-iata 1.svg" alt="Tata" />
-            <img src="assets/img/icons/Layer_1.svg" alt="ABTA" />
-            <img src="assets/img/icons/Layer_1 (1).svg" alt="IATA" />
+            <img class="logo1" src="assets/img/icons/logo-iata 1.svg" alt="Tata" />
+            <img class="logo2" src="assets/img/icons/Layer_1.svg" alt="ABTA" />
+            <img class="logo3" src="assets/img/icons/Layer_1 (1).svg" alt="IATA" />
           </div>
         </div>
 

@@ -24,23 +24,23 @@
                 <img id="menuIcon" src="assets/img/mobile-menu.svg" alt="Menu" width="30" height="30">
             </button>
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav gap-5">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Top Picks</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Testimonials</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-5">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><span class="link-text">Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="link-text">Top Picks</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="link-text">Testimonials</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contact.html"><span class="link-text">Contact</span></a>
+          </li>
+        </ul>
 
-            </div>
+      </div>
         </div>
     </nav>
 
@@ -54,17 +54,23 @@
                 </a>
             </div>
 
-            <div id="menuClose" class="text-white h2 menu-cross">&times;</div>
+           <div id="menuClose" class="menu-cross">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </div>
         </div>
-        <div class="mobile-menu-body px-4 py-5">
+        <div class="mobile-menu-body px-5 py-5">
             <hr>
-            <a href="index.html" class="menu-item active">Home</a>
+            <a href="index.html">Home</a>
             <hr>
             <a href="#">Top Picks</a>
             <hr>
             <a href="#">Testimonials</a>
             <hr>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="menu-item active">Contact</a>
             <hr>
         </div>
     </div>
@@ -78,7 +84,7 @@
             <div class="col-md-7 px-4 mt-5">
                 <h1 class="hero-title d-block d-md-none">
                     GET IN TOUCH
-                    <img src="assets/img/icons/horn.svg" class="hero-icon" alt="icon" />
+                    <img src="assets/img/icons/horn.svg" class="hero-icon  hero-icon-left-con" alt="icon" />
                 </h1>
                 <h1 class="hero-title hide-on-mobile mb-4 mt-5">
                     <div class="first-line">
@@ -105,14 +111,14 @@
                 <!-- Contact Form -->
                 <form class="contact-form px-2">
                     <div class="form-group mb-3">
-                        <label for="name">Name *</label>
+                        <label for="name" class="label-contact">Name *</label>
                         <input type="text" class="form-control" id="name" name="name" required>
                     </div>
-                    <label for="name">email *</label>
+                    <label for="name" class="label-contact">Email *</label>
                     <div class="form-group mb-3">
                         <input type="email" class="form-control" id="email" name="email" required>
                     </div>
-                    <label for="name">message *</label>
+                    <label for="name" class="label-contact">Message *</label>
                     <div class="form-group mb-4">
                         <textarea class="form-control" rows="4" name="message"></textarea>
                     </div>
