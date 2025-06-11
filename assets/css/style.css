@@ -136,7 +136,7 @@
  .hero-section {
    position: relative;
    background-size: cover;
-   background-position: center;
+  
    min-height: 100vh;
    color: white;
    display: flex;
@@ -146,6 +146,10 @@
 
  .hero-section-sea{
   background-image: url(../img/sea-scape.jpg) !important;
+   background-repeat: no-repeat!important;
+  background-position: top center !important;
+  background-size: 100% 100% !important; /* Stretch image to fit entire box */
+  height: 800px !important; /* or whatever fixed height you want */
  }
 
  .hero-section-city{
@@ -166,7 +170,7 @@
    right: 0;
    max-width: 650px;
    height: auto;
-   z-index: 2;
+   z-index: 1;
    pointer-events: none;
  }
 

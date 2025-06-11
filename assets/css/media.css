@@ -32,19 +32,20 @@
   }
 
   .hero-section-sea{
-  background-image: url(../img/sea-plamtree.jpg) !important;
+  background-image: url(../img/sea-scape-mobile.jpg) !important;
+  height: 600px !important;
  }
 
  .hero-section-city{
-  background-image: url(../img/city-bank.jpg) !important;
+  background-image: url(../img/city-scape-mobile.jpg) !important;
  }
 
  .hero-section-moun{
-  background-image: url(../img/snow-mountain.jpg) !important;
+  background-image: url(../img/snow-scape-mobile.jpg) !important;
  }
 
  .hero-section-safari{
-  background-image: url(../img/safari-scorpio.jpg);
+  background-image: url(../img/safari-scape-mobile.jpg);
  }
 
 
