@@ -2,12 +2,12 @@
 
 
   .mobile-logo {
-    margin-top: -70px;
+    margin-top: -55px;
     margin-left: -8px;
   }
 
   .menu-cross {
-    margin-top: -46px;
+    margin-top: -30px;
     margin-right: 14px;
   font-family: 'Work Sans', sans-serif; /* Optional: use a thinner font */
   }
@@ -66,7 +66,7 @@
   }
 
   .hero-icon-left {
-    margin-left: 58px;
+    margin-left: 75px;
   }
 
   .hero-icon-left-con{
@@ -128,7 +128,7 @@
     } */
 
   .footer .logo img {
-    margin-left: -42px;
+    margin-left: -39px;
   }
 
 
@@ -160,7 +160,7 @@
   .logo-bottom {
     font-size: 16px;
     color: #666666;
-    margin-left: -3px;
+    margin-left: -4px;
   }
 
 
@@ -168,31 +168,19 @@
 }
 
 #mobileMenu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: black;
-  z-index: 9999;
-  flex-direction: column;
-  justify-content: start;
-  padding-top: 60px;
-  opacity: 0;
-  transform: translateY(-100%);
- transition: transform 0.8s ease, opacity 0.8s ease;
-  display: flex;
-  /* Keep it always in flow for animation to work */
-  pointer-events: none;
-  /* Prevent interaction while hidden */
+ position: fixed;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background: black;
+   z-index: 9999;
+   display: none;
+   flex-direction: column;
+   justify-content: start;
+   padding-top: 60px;
 }
 
-
-#mobileMenu.active {
-  opacity: 1;
-  transform: translateY(0%);
-  pointer-events: auto;
-}
 
 .mobile-menu-body a {
   display: block;
@@ -214,21 +202,7 @@
   margin: 0;
 }
 
-#menuToggle {
-  background: transparent !important;
-  border: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-}
 
-#menuToggle:focus,
-#menuToggle:active,
-#menuToggle:hover {
-  background: transparent !important;
-  border: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-}
 
 
 @media (max-width: 991.98px) {
@@ -245,6 +219,7 @@
     width: 100%;
     max-width: 165px !important;
     height: 56px !important;
+    margin-left: 0;
   }
 
 }
@@ -254,4 +229,9 @@
   .info-box {
     flex: 1 1 100%;
   }
+
+
+  .px-mobile-10 { 
+    padding-left: 35px !important;
+     padding-right: 35px !important; }
 }

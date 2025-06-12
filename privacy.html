@@ -16,7 +16,7 @@
 <body>
 
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-dark py-md-5 py-3">
+    <nav class="navbar navbar-expand-lg navbar-dark py-md-5 py-4">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="assets/img/dash-away-logo.svg" alt="" class="nav-logo">
@@ -46,36 +46,36 @@
     </nav>
 
 
-     <!-- Mobile Menu -->
-  <div id="mobileMenu" class="d-lg-none">
-    <div class="mobile-menu-header d-flex justify-content-between align-items-center px-4 pt-4 pb-4">
-      <div class="logo text-white mobile-logo">
-        <a href="index.html">
-          <img src="assets/img/dash-away-logo.svg" alt="" class="nav-logo">
-        </a>
-      </div>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="d-lg-none">
+        <div class="mobile-menu-header d-flex justify-content-between align-items-center px-4 pt-4 pb-4">
+            <div class="logo text-white mobile-logo">
+                <a href="index.html">
+                    <img src="assets/img/dash-away-logo.svg" alt="" class="nav-logo">
+                </a>
+            </div>
 
-      <div id="menuClose" class="menu-cross">
-        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1"
-          stroke-linecap="round" stroke-linejoin="round">
-          <line x1="18" y1="6" x2="6" y2="18" />
-          <line x1="6" y1="6" x2="18" y2="18" />
-        </svg>
-      </div>
+            <div id="menuClose" class="menu-cross">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </div>
 
+        </div>
+        <div class="mobile-menu-body px-5 py-5">
+            <hr>
+            <a href="index.html" class="menu-item active">Home</a>
+            <hr>
+            <a href="#">Top Picks</a>
+            <hr>
+            <a href="#">Testimonials</a>
+            <hr>
+            <a href="contact.html">Contact</a>
+            <hr>
+        </div>
     </div>
-    <div class="mobile-menu-body px-5 py-5">
-      <hr>
-      <a href="index.html" class="menu-item active">Home</a>
-      <hr>
-      <a href="#">Top Picks</a>
-      <hr>
-      <a href="#">Testimonials</a>
-      <hr>
-      <a href="contact.html">Contact</a>
-      <hr>
-    </div>
-  </div>
 
 
 
@@ -87,7 +87,7 @@
                 <h1 class="hero-title mt-md-5 mt-0">
                     PRIVACY POLICY
                 </h1>
-                
+
 
             </div>
         </div>
@@ -215,9 +215,16 @@
                     </div>
                     <div class="logo-bottom mb-3">©2025 Dashaway</div>
                     <div class="partner-logos d-flex gap-3 mb-4 mb-md-0">
-                        <img src="assets/img/icons/logo-iata 1.svg" alt="Tata" />
-                        <img src="assets/img/icons/Layer_1.svg" alt="ABTA" />
-                        <img src="assets/img/icons/Layer_1 (1).svg" alt="IATA" />
+                        <a href="https://www.iata.org/">
+                            <img class="logo1" src="assets/img/icons/logo-iata 1.svg" alt="Tata" />
+                        </a>
+                        <a href="https://www.abta.com/">
+                            <img class="logo2" src="assets/img/icons/Layer_1.svg" alt="ABTA" />
+                        </a>
+                        <a href="https://www.atol.org/">
+                            <img class="logo3" src="assets/img/icons/Layer_1 (1).svg" alt="IATA" />
+                        </a>
+
                     </div>
                 </div>
 
@@ -253,26 +260,17 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        const menuToggle = document.getElementById('menuToggle');
-        const menuIcon = document.getElementById('menuIcon');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const menuClose = document.getElementById('menuClose');
+         const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuClose = document.getElementById('menuClose');
 
-        menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.add('active');
-            menuIcon.classList.remove('fast-close');
-            menuIcon.classList.add('slow-open');
-        });
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.style.display = 'flex';
+    });
 
-        menuClose.addEventListener('click', () => {
-            mobileMenu.classList.remove('active');
-            menuIcon.classList.remove('slow-open');
-            menuIcon.classList.add('fast-close');
-
-            setTimeout(() => {
-                menuIcon.classList.remove('fast-close');
-            }, 300);
-        });
+    menuClose.addEventListener('click', () => {
+      mobileMenu.style.display = 'none';
+    });
     </script>
 
 </body>

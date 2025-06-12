@@ -33,56 +33,52 @@
    width: 100%;
    max-width: 210px;
    height: 71px;
+   margin-left: -14px;
  }
 
 
 
  .navbar .nav-link {
-   color: white !important;
-   position: relative;
-   text-decoration: none;
-   transition: color 0.3s ease;
-   font-family: 'Work Sans', sans-serif;
-   font-size: 16px;
-   font-weight: 400;
-   font-style: normal;
-   padding: 0 12px;
-   /* Optional, keeps link clickable */
+  color: white !important;
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0 12px;
+}
 
- }
+.link-text {
+  position: relative;
+  display: inline-block;
+}
 
+/* Underline only for active link */
+.link-text::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #F8E928;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
 
- .link-text {
-   position: relative;
-   display: inline-block;
- }
+/* ✨ Only active link shows underline */
+.navbar .nav-link.active .link-text::after {
+  opacity: 1;
+}
 
- .link-text::after {
-   content: '';
-   position: absolute;
-   bottom: -15px;
-   left: 0;
-   width: 100%;
-   height: 4px;
-   background-color: #F8E928;
-   opacity: 0;
-   transition: opacity 0.3s ease;
- }
+/* Hover effect: color only, no underline */
+.navbar .nav-link:hover {
+  color: #F8E928 !important;
+}
 
- /* Show underline on hover or active */
- .navbar .nav-link:hover .link-text::after,
- .navbar .nav-link.active .link-text::after {
-   opacity: 1;
- }
-
- .navbar .nav-link:hover {
-   color: #F8E928 !important;
- }
-
-
-
-
- .navbar .nav-link.active {
+.navbar .nav-link.active {
    color: #F8E928 !important;
  }
 
@@ -92,34 +88,7 @@
    margin-right: 2rem;
  }
 
- /* Icon animations */
- @keyframes rotateSlow {
-   from {
-     transform: rotate(0deg);
-   }
-
-   to {
-     transform: rotate(90deg);
-   }
- }
-
- @keyframes rotateFast {
-   from {
-     transform: rotate(90deg);
-   }
-
-   to {
-     transform: rotate(0deg);
-   }
- }
-
- #menuIcon.slow-open {
-   animation: rotateSlow 0.6s ease forwards;
- }
-
- #menuIcon.fast-close {
-   animation: rotateFast 0.3s ease forwards;
- }
+ 
 
  #menuIcon {
    width: 100%;
@@ -144,13 +113,14 @@
    overflow: hidden;
  }
 
- .hero-section-sea{
+.hero-section-sea {
   background-image: url(../img/sea-scape.jpg) !important;
-   background-repeat: no-repeat!important;
-  background-position: top center !important;
-  background-size: 100% 100% !important; /* Stretch image to fit entire box */
-  height: 800px !important; /* or whatever fixed height you want */
- }
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+  height: 800px !important;
+}
+
 
  .hero-section-city{
   background-image: url(../img/city-scape.jpg) !important;
@@ -250,6 +220,7 @@
    font-weight: 400;
    font-size: 18px;
    line-height: 26px;
+
  }
 
  .text-dark {
@@ -288,10 +259,10 @@
    max-width: 210px;
    max-height: 53px;
    font-size: 13px;
-   font-weight: bold;
+   font-weight: 900;
    letter-spacing: 4px;
    text-transform: uppercase;
-   background-color: black;
+   background-color: #000000;
    color: #F8E928;
    border: none;
    border-radius: 0px;
@@ -304,11 +275,11 @@
    max-width: 210px;
    max-height: 53px;
    font-size: 13px;
-   font-weight: bold;
+   font-weight: 900;
    letter-spacing: 4px;
    text-transform: uppercase;
    background-color: #F8E928;
-   color: black;
+   color: #000000;
    border: none;
    border-radius: 0px;
    transition: background-color 0.3s ease;
@@ -344,7 +315,7 @@
    margin-bottom: 20px;
    text-align: left;
    /* Ensures logo is aligned left */
-   margin-left: 15px;
+   margin-left: 7px;
  }
 
  .footer .logo img {
@@ -388,7 +359,7 @@
 
  .partner-logos {
    margin-top: 30px;
-   margin-left: 43px;
+   margin-left: 30px;
    gap: 35px;
    /* Increase the gap between logos */
  }
@@ -419,7 +390,7 @@
  .logo-bottom {
    font-size: 16px;
    color: #666666;
-   margin-left: 42px;
+   margin-left: 34px;
  }
 
 
