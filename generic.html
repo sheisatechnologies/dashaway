@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashaway</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/media.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-md-5 py-4">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/dash-away-logo.svg" alt="" class="nav-logo">
+            </a>
+            <button id="menuToggle" class="border-0 bg-transparent d-lg-none" type="button" style="cursor: pointer;">
+                <img id="menuIcon" src="assets/img/mobile-menu.svg" alt="Menu" width="30" height="30">
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-5">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Top Picks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="d-lg-none">
+        <div class="mobile-menu-header d-flex justify-content-between align-items-center px-4 pt-4 pb-4">
+            <div class="logo text-white mobile-logo">
+                <a href="index.html">
+                    <img src="assets/img/dash-away-logo.svg" alt="" class="nav-logo">
+                </a>
+            </div>
+
+            <div id="menuClose" class="menu-cross">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </div>
+
+        </div>
+        <div class="mobile-menu-body px-5 py-5">
+            <hr>
+            <a href="index.html" class="menu-item active">Home</a>
+            <hr>
+            <a href="#">Top Picks</a>
+            <hr>
+            <a href="#">Testimonials</a>
+            <hr>
+            <a href="contact.html">Contact</a>
+            <hr>
+        </div>
+    </div>
+
+
+
+    <!-- Section 1 -->
+    <section class="hero-section hero-section-generic" style="background-image: url('assets/img/generic.jpg');">
+        <div class="overlay"></div>
+        <div class="container hero-content text-left pt-5">
+            <div class="col-md-7 px-4 px-md-2 mb-4 pt-5">
+                <h1 class="hero-title mt-md-5 mt-0 pt-5">
+                    GENERIC PAGE
+                </h1>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- White Content Section -->
+    <section class="privacy-content-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 px-4">
+                    <h1 class="hero-title hero-title-generic text-dark pt-4">
+                        THIS IS AN H4 TITLE, SHOWING LINE HEIGHT
+                    </h1>
+                    <h2 class="hero-title sub-title-generic text-dark pt-4">
+                        H2 TITLE,ALSO SHOWING LINE HEIGHT
+                        </h1>
+                        <h3 class="hero-title sub2-title-generic text-dark pt-4">
+                            H3 TITLE,ALSO SHOWING LINE HEIGHT
+                            H3 TITLE,ALSO SHOWING LINE HEIGHT
+                        </h3>
+                        <h3 class="priv-head pt-4">Bold P strong text</h3>
+                        <p class="prive-desc">Normal p text. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nullam eleifend venenatis mollis. Pellentesque habitant morbi tristique senectus et netus et
+                            malesuada fames ac turpis egestas. Etiam elementum risus at ex posuere, non aliquam justo
+                            gravida. Phasellus pretium leo bibendum purus varius, non rhoncus tellus pulvinar.</p>
+                        <p class="prive-desc mt-4">Curabitur condimentum, leo eu finibus interdum, libero velit posuere
+                            enim, id suscipit mauris eros ac lacus. Vivamus sollicitudin, magna in auctor ultricies,
+                            sapien enim sollicitudin risus, ac commodo erat elit ac dolor. Sed ornare sollicitudin
+                            sapien.</p>
+                        <p class="prive-desc mt-4">Morbi eu purus rhoncus, blandit mauris a, volutpat tellus. Phasellus
+                            accumsan accumsan erat vel gravida. Suspendisse non sem vitae sem dictum dictum. Phasellus
+                            quis tellus ligula. Vivamus a nunc eget augue sagittis feugiat. Quisque sit amet nisi leo.
+                            Sed luctus libero a sagittis tristique.</p>
+                        <!-- Add more sections as needed based on your privacy content -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- slider -->
+    <section class="slider">
+        <div class="container">
+            <div class="custom-slider">
+                <div><img src="assets/img/slider.jpg" alt="Slide 1"></div>
+                <div><img src="assets/img/slider.jpg" alt="Slide 2"></div>
+                <div><img src="assets/img/slider.jpg" alt="Slide 3"></div>
+            </div>
+        </div>
+
+    </section>
+
+
+<!-- YouTube Video Section -->
+<section class="video-section py-5">
+  <div class="container text-center">
+    <div class="youtube-wrapper">
+      <iframe width="100%" height="500" 
+        src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+        title="YouTube video" 
+        frameborder="0" 
+        allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+
+<!-- YouTube Video Section -->
+<section class="video-section py-5">
+  <div class="container text-center">
+    <div class="youtube-wrapper">
+      <iframe width="100%" height="500" 
+        src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+        title="YouTube video" 
+        frameborder="0" 
+        allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container px-5 px-md-0">
+            <div class="row text-white">
+
+                <!-- Column 1: Logo and Badges -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="logo mb-4">
+                        <img src="assets/img/dash-away-logo.svg" alt="Logo" />
+                    </div>
+                    <div class="logo-bottom mb-3">©2025 Dashaway</div>
+                    <div class="partner-logos d-flex gap-3 mb-4 mb-md-0">
+                        <a href="https://www.iata.org/">
+                            <img class="logo1" src="assets/img/icons/logo-iata 1.svg" alt="Tata" />
+                        </a>
+                        <a href="https://www.abta.com/">
+                            <img class="logo2" src="assets/img/icons/Layer_1.svg" alt="ABTA" />
+                        </a>
+                        <a href="https://www.atol.org/">
+                            <img class="logo3" src="assets/img/icons/Layer_1 (1).svg" alt="IATA" />
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Column 2: Navigation -->
+                <div class="col-md-2 col-6 mt-md-5 mt-0 footer-links">
+                    <h6 class="text-white mb-3">Navigation</h6>
+                    <a href="#">Home</a>
+                    <a href="#">Top Picks</a>
+                    <a href="#">Testimonials</a>
+                    <a href="#">Contact</a>
+                </div>
+
+                <!-- Column 3: Legals -->
+                <div class="col-md-2 col-6 mt-md-5 mt-0 footer-links">
+                    <h6 class="text-white mb-3">Legals</h6>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+
+                <!-- Column 4: Credit -->
+                <div class="col-md-2 mt-md-5 mt-0 pt- pt-md-0 footer-links">
+                    <h6 class="invisible">Credits</h6> <!-- visually hidden heading for spacing -->
+                    <a href="#">Website by Other Alias</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Slick JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuClose = document.getElementById('menuClose');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.add('show');
+        });
+
+        menuClose.addEventListener('click', () => {
+            mobileMenu.classList.remove('show');
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.custom-slider').slick({
+                dots: true,
+                arrows: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                prevArrow: '<button type="button" class="slick-prev"><img src="assets/img/prev.svg" alt="Prev"></button>',
+                nextArrow: '<button type="button" class="slick-next"><img src="assets/img/next.svg" alt="Next"></button>',
+               
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>

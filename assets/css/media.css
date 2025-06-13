@@ -9,7 +9,8 @@
   .menu-cross {
     margin-top: -30px;
     margin-right: 14px;
-  font-family: 'Work Sans', sans-serif; /* Optional: use a thinner font */
+    font-family: 'Work Sans', sans-serif;
+    /* Optional: use a thinner font */
   }
 
 
@@ -27,38 +28,43 @@
     line-height: 60px;
   }
 
-  .text-mob-white{
+  .text-mob-white {
     color: white !important;
   }
 
-  .hero-section-sea{
-  background-image: url(../img/sea-scape-mobile.jpg) !important;
-  height: 600px !important;
- }
+  .hero-section-sea {
+    background-image: url(../img/sea-scape-mobile.jpg) !important;
+    height: 600px !important;
+  }
 
- .hero-section-city{
-  background-image: url(../img/city-scape-mobile.jpg) !important;
- }
+  .hero-section-city {
+    background-image: url(../img/city-scape-mobile.jpg) !important;
+  }
 
- .hero-section-moun{
-  background-image: url(../img/snow-scape-mobile.jpg) !important;
- }
+  .hero-section-moun {
+    background-image: url(../img/snow-scape-mobile.jpg) !important;
+  }
 
- .hero-section-safari{
-  background-image: url(../img/safari-scape-mobile.jpg);
- }
+  .hero-section-safari {
+    background-image: url(../img/safari-scape-mobile.jpg);
+  }
 
 
- .hero-content {
-  padding-top: 0rem !important; /* or whatever gap you want */
-  padding-bottom: 0rem !important;
-}
+  .hero-content {
+    padding-top: 0rem !important;
+    /* or whatever gap you want */
+    padding-bottom: 0rem !important;
+  }
+
+
+  
 
   .hero-desc {
     font-size: 16px;
     line-height: 23px;
 
   }
+
 
 
 
@@ -74,7 +80,7 @@
     margin-left: 75px;
   }
 
-  .hero-icon-left-con{
+  .hero-icon-left-con {
     margin-left: 30px;
   }
 
@@ -173,7 +179,7 @@
 }
 
 #mobileMenu {
- position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
@@ -272,7 +278,8 @@
   }
 
 
-  .px-mobile-10 { 
+  .px-mobile-10 {
     padding-left: 35px !important;
-     padding-right: 35px !important; }
+    padding-right: 35px !important;
+  }
 }

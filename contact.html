@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Dashaway</title>
     <link rel="icon" type="image/png" href="assets/img/favicon.png" />
-   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/media.css">
@@ -83,53 +84,53 @@
         <div class="overlay"></div>
         <div class="container hero-content text-left mt-5">
             <div class="row">
-                <div class="col-md-7 px-4 mt-5">
-                <h1 class="hero-title d-block d-md-none">
-                    GET IN TOUCH
-                    <img src="assets/img/icons/horn.svg" class="hero-icon  hero-icon-left-con" alt="icon" />
-                </h1>
-                <h1 class="hero-title hide-on-mobile mb-4 mt-5">
-                    <div class="first-line">
-                        <span class="word"> GET IN</span>
-                        <img src="assets/img/icons/horn.svg" class="hero-icon" alt="Mountain Icon" />
-                    </div>
-                    <div class="second-line">TOUCH</div>
-                </h1>
+                <div class="col-lg-7 px-4 mt-5">
+                    <h1 class="hero-title d-block d-md-none">
+                        GET IN TOUCH
+                        <img src="assets/img/icons/horn.svg" class="hero-icon  hero-icon-left-con" alt="icon" />
+                    </h1>
+                    <h1 class="hero-title hide-on-mobile mb-4 mt-5">
+                        <div class="first-line">
+                            <span class="word"> GET IN</span>
+                            <img src="assets/img/icons/horn.svg" class="hero-icon" alt="Mountain Icon" />
+                        </div>
+                        <div class="second-line">TOUCH</div>
+                    </h1>
 
-                <p class="hero-desc mb-4 py-3 py-md-0 px-2">Get in touch with DashAway to start planning your dream
-                    holiday — fill out our
-                    form, email us, or give us a call today!</p>
-                <!-- Info Boxes -->
-                <div class="contact-info-boxes d-flex flex-wrap justify-content-between mb-4 px-2">
-                    <div class="info-box">
-                        <img src="assets/img/icons/phone.svg" alt="Phone Icon" class="info-icon" />
-                        <div class="info-text">+91 9876543210</div>
+                    <p class="hero-desc mb-4 py-3 py-md-0 px-2">Get in touch with DashAway to start planning your dream
+                        holiday — fill out our
+                        form, email us, or give us a call today!</p>
+                    <!-- Info Boxes -->
+                    <div class="contact-info-boxes d-flex flex-wrap justify-content-between mb-4 px-2">
+                        <div class="info-box">
+                            <img src="assets/img/icons/phone.svg" alt="Phone Icon" class="info-icon" />
+                            <div class="info-text">+91 9876543210</div>
+                        </div>
+                        <div class="info-box">
+                            <img src="assets/img/icons/mail.svg" alt="Mail Icon" class="info-icon" />
+                            <div class="info-text">info@dashaway.com</div>
+                        </div>
                     </div>
-                    <div class="info-box">
-                        <img src="assets/img/icons/mail.svg" alt="Mail Icon" class="info-icon" />
-                        <div class="info-text">info@dashaway.com</div>
-                    </div>
+                    <!-- Contact Form -->
+                    <form class="contact-form px-2">
+                        <div class="form-group mb-3">
+                            <label for="name" class="label-contact">Name *</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <label for="name" class="label-contact">Email *</label>
+                        <div class="form-group mb-3">
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <label for="name" class="label-contact">Message *</label>
+                        <div class="form-group mb-4">
+                            <textarea class="form-control" rows="4" name="message"></textarea>
+                        </div>
+                    </form>
+
+                    <a href="#" class="btn px-4 py-3 mt-4 text-uppercase yellow-btn mb-5 mx-2">SUBMIT</a>
                 </div>
-                <!-- Contact Form -->
-                <form class="contact-form px-2">
-                    <div class="form-group mb-3">
-                        <label for="name" class="label-contact">Name *</label>
-                        <input type="text" class="form-control" id="name" name="name" required>
-                    </div>
-                    <label for="name" class="label-contact">Email *</label>
-                    <div class="form-group mb-3">
-                        <input type="email" class="form-control" id="email" name="email" required>
-                    </div>
-                    <label for="name" class="label-contact">Message *</label>
-                    <div class="form-group mb-4">
-                        <textarea class="form-control" rows="4" name="message"></textarea>
-                    </div>
-                </form>
+            </div>
 
-                <a href="#" class="btn px-4 py-3 mt-4 text-uppercase yellow-btn mb-5 mx-2">SUBMIT</a>
-            </div>
-            </div>
-            
         </div>
     </section>
 
@@ -194,17 +195,17 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-       const menuToggle = document.getElementById('menuToggle');
-const mobileMenu = document.getElementById('mobileMenu');
-const menuClose = document.getElementById('menuClose');
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuClose = document.getElementById('menuClose');
 
-menuToggle.addEventListener('click', () => {
-  mobileMenu.classList.add('show');
-});
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.add('show');
+        });
 
-menuClose.addEventListener('click', () => {
-  mobileMenu.classList.remove('show');
-});
+        menuClose.addEventListener('click', () => {
+            mobileMenu.classList.remove('show');
+        });
     </script>
 
 </body>
