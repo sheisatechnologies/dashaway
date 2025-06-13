@@ -125,7 +125,7 @@
   background-size: cover;
 
   color: white;
-  height: 620px; /* Fixed height */
+  height: 630px; /* Fixed height */
 }
 
 
@@ -272,7 +272,7 @@
    max-width: 210px;
    max-height: 53px;
    font-size: 13px;
-   font-weight: 900;
+   font-weight: bold;
    letter-spacing: 4px;
    text-transform: uppercase;
    background-color: #000000;
@@ -288,7 +288,7 @@
    max-width: 210px;
    max-height: 53px;
    font-size: 13px;
-   font-weight: 900;
+   font-weight: bold;
    letter-spacing: 4px;
    text-transform: uppercase;
    background-color: #F8E928;
