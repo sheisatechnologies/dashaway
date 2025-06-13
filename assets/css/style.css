@@ -93,7 +93,7 @@
  #menuIcon {
    width: 100%;
    margin-top: 20px;
-   margin-right: 7px;
+   margin-right: 12px;
    max-width: 25px;
    height: 17px;
  }
@@ -114,11 +114,24 @@
  }
 
 .hero-section-sea {
-  background-image: url(../img/sea-scape.jpg) !important;
-  background-repeat: no-repeat !important;
-  background-position: center center !important;
-  background-size: cover !important;
-  height: 800px !important;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  background-image: url(../img/sea-scape.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  color: white;
+  height: 620px; /* Fixed height */
+}
+
+
+.hero-content {
+  padding-top: 2rem !important; /* or whatever gap you want */
+  padding-bottom: 2rem !important;
 }
 
 
@@ -234,7 +247,7 @@
  }
 
  .second-line {
-   margin-top: -30px;
+   margin-top: -40px;
 
 
  }

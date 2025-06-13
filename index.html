@@ -81,12 +81,12 @@
 
 
   <!-- Section 1 -->
-  <section class="hero-section hero-section-sea">
+  <section class="hero-section-sea">
 
-    <div class="container hero-content text-left mt-5 py-5">
+    <div class="container hero-content text-left mt-5 pt-4 pb-2 ">
       <div class="row">
       <div class="col-lg-6 px-4 py-5 mt-5 px-mobile-10">
-        <h1 class="hero-title d-block d-md-none px-1">
+        <h1 class="hero-title d-block d-md-none px-1 pt-4">
           DREAM HOLIDAY
           <img src="assets/img/icons/sun.svg" class="hero-icon" alt="icon" />
         </h1>
@@ -101,7 +101,7 @@
         <p class="lead hero-desc px-2  ">Tailor-made holidays designed to fit your budget, dreams and desires. Whether
           you're a family seeking adventure or a couple craving a romantic escape, our personal, custom
           service ensures a perfect&nbsp;getaway</p>
-        <a href="#" class="btn px-4 py-3 mt-4 mx-2 mb-5 text-uppercase black-btn mb-md-5 md-3">CONTACT US</a>
+        <a href="#" class="btn px-4 py-3 mt-4 mt-md-1 mx-2 mb-5 text-uppercase black-btn mb-md-5 md-3">CONTACT US</a>
       </div>
       </div>
      
@@ -193,7 +193,7 @@
           adventure
           and budget, perfect for families and couples seeking a wild escape. From spotting the Big Five in
           the African savanna to exploring lush jungles, we handle every detail; lodges, guides, and
-          itineraries — so you can immerse yourself in nature’s wonders hassle&nbsp;free.</p>
+          itineraries — so you can immerse yourself in nature’s wonders&nbsp;hassle-free.</p>
         <a href="#" class="btn px-4 py-3 mt-4 mx-2 text-uppercase yellow-btn mb-md-5 mb-3">CONTACT US</a>
       </div>
       </div>
@@ -215,13 +215,13 @@
           </div>
           <div class="logo-bottom mb-3">©2025 Dashaway</div>
           <div class="partner-logos d-flex gap-3 mb-4 mb-md-0">
-            <a href="https://www.iata.org/">
+            <a href="https://www.iata.org/" target="_blank">
               <img class="logo1" src="assets/img/icons/logo-iata 1.svg" alt="Tata" />
             </a>
-            <a href="https://www.abta.com/">
+            <a href="https://www.abta.com/" target="_blank">
               <img class="logo2" src="assets/img/icons/Layer_1.svg" alt="ABTA" />
             </a>
-            <a href="https://www.atol.org/">
+            <a href="https://www.atol.org/"target="_blank">
               <img class="logo3" src="assets/img/icons/Layer_1 (1).svg" alt="IATA" />
             </a>
 
@@ -261,16 +261,17 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     const menuToggle = document.getElementById('menuToggle');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const menuClose = document.getElementById('menuClose');
+const mobileMenu = document.getElementById('mobileMenu');
+const menuClose = document.getElementById('menuClose');
 
-    menuToggle.addEventListener('click', () => {
-      mobileMenu.style.display = 'flex';
-    });
+menuToggle.addEventListener('click', () => {
+  mobileMenu.classList.add('show');
+});
 
-    menuClose.addEventListener('click', () => {
-      mobileMenu.style.display = 'none';
-    });
+menuClose.addEventListener('click', () => {
+  mobileMenu.classList.remove('show');
+});
+
   </script>
 
 
