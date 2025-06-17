@@ -125,7 +125,7 @@
    background-size: cover;
 
    color: white;
-   height: 630px;
+   height: 900px;
    /* Fixed height */
  }
 
@@ -500,14 +500,19 @@
 
 
  .hero-section-privacy {
-   position: relative;
-   background-size: cover;
-   background-position: center;
-   min-height: 65vh;
-   /* Half the screen height */
-   color: white;
+    position: relative;
    display: flex;
    align-items: center;
+   overflow: hidden;
+
+   background-image: url(../img/privacy.jpg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+
+   color: white;
+   height: 500px;
+   /* Fixed height */
  }
 
  .priv-head {
@@ -530,18 +535,23 @@
  /*----------- generic css start------------------ */
 
  .hero-section-generic {
-   position: relative;
-   background-size: cover;
-   background-position: center;
-   min-height: 65vh;
-   /* Half the screen height */
-   color: white;
+    position: relative;
    display: flex;
    align-items: center;
+   overflow: hidden;
+
+   background-image: url(../img/generic.jpg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+
+   color: white;
+   height: 500px;
+   /* Fixed height */
  }
 
 
- .hero-title-generic {
+ /* .hero-title-generic {
   font-size: 126px;
   line-height: 114px;
  }
@@ -555,8 +565,38 @@
  .sub2-title-generic{
   font-size: 52px;
   line-height: 52px;
- }
+ } */
 
+ .generic-content-section h1,
+.generic-content-section h2,
+.generic-content-section h3 {
+ font-family: 'MovementDirectThin', sans-serif;
+}
+
+.generic-content-section h1{
+font-size: 126px;
+line-height: 123px;
+}
+
+.generic-content-section h2{
+font-size: 76px;
+line-height: 76px;
+}
+
+.generic-content-section h3{
+font-size: 52px;
+line-height: 52px;
+}
+
+.generic-content-section p{
+font-size: 18px;
+line-height: 26px;
+}
+
+
+.privacy-content-section p{
+   font-family: 'Work Sans', sans-serif;
+}
 
  
 /* slider */
