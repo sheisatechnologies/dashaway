@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GSAP Scroll Parallax</title>
+
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 200vh; /* To enable scrolling */
+    }
+    .hero-section {
+      position: relative;
+      background-image: url('assets/img/sea-scape.jpg'); /* Replace this */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .tree-image {
+      max-height: 400px;
+      z-index: 2;
+      position: relative;
+    }
+    .bg-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      background-image: inherit;
+      background-size: cover;
+      background-position: center;
+    }
+#bg-layer, #text-content, #tree-image {
+  will-change: transform;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="bg-layer" id="bg-layer"></div>
+
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Content -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <div class="hero-content" id="text-content">
+            <h2>Grow a Greener Future</h2>
+            <p>Join us in our mission to plant trees and protect the planet for future generations.</p>
+            <a href="#" class="btn btn-success mt-3">Get Involved</a>
+          </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="col-md-6 text-center">
+          <img src="assets/img/sea-scape-palm-tree.webp" alt="Tree Image" class="img-fluid tree-image" id="tree-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- GSAP Scroll Animations -->
+  <script>
+   gsap.registerPlugin(ScrollTrigger);
+
+// Background - slowest, smooth scroll
+gsap.to("#bg-layer", {
+  y: -150, // minimal movement
+  ease: "power1.out",
+  scrollTrigger: {
+    trigger: ".hero-section",
+    start: "top top",
+    end: "bottom top",
+    scrub: 0.8
+  }
+});
+
+// Text content - medium speed
+gsap.to("#text-content", {
+  y: -250,
+  ease: "power1.out",
+  scrollTrigger: {
+    trigger: ".hero-section",
+    start: "top top",
+    end: "bottom top",
+    scrub: 0.8
+  }
+});
+
+// Tree image - fastest
+gsap.to("#tree-image", {
+  y: -500,
+  ease: "power1.out",
+  scrollTrigger: {
+    trigger: ".hero-section",
+    start: "top top",
+    end: "bottom top",
+    scrub: 0.8
+  }
+});
+
+  </script>
+
+</body>
+</html>

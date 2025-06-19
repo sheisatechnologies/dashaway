@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/media.css">
 
+  <style>
+    
+  </style>
 </head>
 
 <body>
@@ -81,36 +84,38 @@
 
 
   <!-- Section 1 -->
-  <section class="hero-section-sea">
+<section class="hero-section-sea">
+  <!-- Background Layer -->
+  <div class="hero-bg-layer" id="sea-bg-layer"></div>
 
-    <div class="container hero-content text-left mt-5 pt-4 pb-2 ">
-      <div class="row">
-        <div class="col-lg-6 px-4 py-5 mt-5 px-mobile-10">
-          <h1 class="hero-title d-block d-md-none px-1">
-            DREAM HOLIDAY
-            <img src="assets/img/icons/sun.svg" class="hero-icon" alt="icon" />
-          </h1>
-          <h1 class="hero-title hide-on-mobile mb-4 mt-5">
-            <div class="first-line">
-              <span class="word"> DREAM</span>
-              <img src="assets/img/icons/sun.svg" class="hero-icon" alt="Mountain Icon" />
-            </div>
-            <div class="second-line">HOLIDAY</div>
-          </h1>
+  <!-- Text Content -->
+  <div class="container hero-content text-left mt-5 pt-4 mt-md-0 pt-md-0 pb-2 " id="sea-text-content">
+    <div class="row">
+      <div class="col-lg-6 px-4 py-5 mt-5 px-mobile-10">
+        <h1 class="hero-title d-block d-md-none px-1">
+          DREAM HOLIDAY
+          <img src="assets/img/icons/sun.svg" class="hero-icon" alt="icon" />
+        </h1>
+        <h1 class="hero-title hide-on-mobile mb-4 mt-5">
+          <div class="first-line">
+            <span class="word"> DREAM</span>
+            <img src="assets/img/icons/sun.svg" class="hero-icon" alt="Mountain Icon" />
+          </div>
+          <div class="second-line">HOLIDAY</div>
+        </h1>
 
-          <p class="lead hero-desc px-2  ">Tailor-made holidays designed to fit your budget, dreams and desires. Whether
-            you're a family seeking adventure or a couple craving a romantic escape, our personal, custom
-            service ensures a perfect&nbsp;getaway</p>
-          <a href="#" class="btn px-4 py-3 mt-4 mx-2 mb-5 text-uppercase black-btn mb-md-5 md-3">CONTACT US</a>
-        </div>
+        <p class="lead hero-desc px-2">Tailor-made holidays designed to fit your budget, dreams and desires...</p>
+        <a href="#" class="btn px-4 py-3 mt-4 mx-2 mb-5 text-uppercase black-btn mb-md-5 md-3">CONTACT US</a>
       </div>
-
     </div>
-    <img src="assets/img/sea-scape-palm-tree.webp" alt="Decorative PNG" class="hero-side-image" />
-  </section>
+  </div>
+
+  <!-- Tree Image (Palm) -->
+  <img src="assets/img/sea-scape-palm-tree.webp" alt="Palm Tree" class="hero-side-image" id="sea-tree-image" />
+</section>
 
   <!-- Section 2 -->
-  <section class="hero-section hero-section-city">
+  <section class="hero-section-city">
 
     <!-- Left overlay PNG -->
     <img src="assets/img/city-scape-building.png" alt="Left overlay" class="full-overlay-png left-png " />
@@ -257,6 +262,8 @@
 
 
   <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
   <script>
@@ -274,6 +281,46 @@
 
   </script>
 
+
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Background - slowest
+  gsap.to(".hero-section-sea", {
+    y: -150,
+    ease: "power1.out",
+    scrollTrigger: {
+      trigger: ".hero-section-sea",
+      start: "top top",
+      end: "bottom top",
+      scrub: 0.8
+    }
+  });
+
+  // Text content - medium speed
+  gsap.to("#sea-text-content", {
+    y: -250,
+    ease: "power1.out",
+    scrollTrigger: {
+      trigger: ".hero-section-sea",
+      start: "top top",
+      end: "bottom top",
+      scrub: 0.8
+    }
+  });
+
+  // Tree image - fastest
+  gsap.to("#sea-tree-image", {
+    y: -500,
+    ease: "power1.out",
+    scrollTrigger: {
+      trigger: ".hero-section-sea",
+      start: "top top",
+      end: "bottom top",
+      scrub: 0.8
+    }
+  });
+</script>
 
 
 

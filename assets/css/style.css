@@ -125,7 +125,7 @@
    background-size: cover;
 
    color: white;
-   height: 900px;
+   height: 1000px;
    /* Fixed height */
  }
 
@@ -138,14 +138,48 @@
 
 
  .hero-section-city {
+  position: relative;
+   display: flex;
+   align-items: center;
+   overflow: hidden;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+
+   color: white;
+   height: 1000px;
    background-image: url(../img/city-scape.jpg) !important;
  }
 
  .hero-section-moun {
+  position: relative;
+   display: flex;
+   align-items: center;
+   overflow: hidden;
+
+   background-image: url(../img/sea-scape.jpg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+
+   color: white;
+   height: 1000px;
    background-image: url(../img/snow-scape.jpg) !important;
  }
 
  .hero-section-safari {
+  position: relative;
+   display: flex;
+   align-items: center;
+   overflow: hidden;
+
+   background-image: url(../img/sea-scape.jpg);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+
+   color: white;
+   height: 1000px;
    background-image: url(../img/safari-scape.jpg);
  }
 
