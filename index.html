@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dashaway</title>
   <link rel="icon" type="image/png" href="assets/img/favicon.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/media.css">
@@ -104,8 +104,9 @@
           <div class="second-line">HOLIDAY</div>
         </h1>
 
-        <p class="lead hero-desc px-2">Tailor-made holidays designed to fit your budget, dreams and desires...</p>
-        <a href="#" class="btn px-4 py-3 mt-4 mx-2 mb-5 text-uppercase black-btn mb-md-5 md-3">CONTACT US</a>
+        <p class="lead hero-desc px-2">Tailor-made holidays designed to fit your budget, dreams and desires. Whether you're a family seeking adventure or a couple craving a romantic escape, our personal, custom service ensures a perfect getaway.</p>
+        <!-- <a href="#" class="btn px-4 py-3 mt-4 mx-2 mb-5 text-uppercase black-btn mb-md-5 md-3">CONTACT US</a> -->
+        <a class="btn" href="#"><span data-hover="Rotating button">CONTACT US</span></a>
       </div>
     </div>
   </div>
@@ -115,11 +116,11 @@
 </section>
 
   <!-- Section 2 -->
-  <section class="hero-section-city">
+  <section class="hero-section-city hero-section-bg">
 
     <!-- Left overlay PNG -->
-    <img src="assets/img/city-scape-building.png" alt="Left overlay" class="full-overlay-png left-png " />
-    <div class="container hero-content text-left">
+    <img src="assets/img/city-scape-building.png" alt="Left overlay" class="full-overlay-png left-png " id="hero-section-city-img" style="height: 180vh;"/>
+    <div class="container hero-content text-left hero-section-city-content ">
       <div class="row">
         <div class="col-lg-6 offset-lg-6 ml-auto px-4 px-mobile-10">
           <h1 class="hero-title d-block d-md-none px-1">
@@ -136,7 +137,8 @@
           <p class="hero-desc px-2">From sun-soaked beaches to vibrant city breaks, thrilling ski trips, or serene
             retreats, we offer destinations to suit every taste. Let us take the hassle out of planning and
             booking your holiday, so you can focus on making unforgettable&nbsp;memories.</p>
-          <a href="#" class="btn px-4 py-3 mt-4 mx-2 text-uppercase yellow-btn mb-md-5 mb-3">CONTACT US</a>
+          <!-- <a href="#" class="btn px-4 py-3 mt-4 mx-2 text-uppercase yellow-btn mb-md-5 mb-3">CONTACT US</a> -->
+          <a class="btn" href="#"><span data-hover="Rotating button">CONTACT US</span></a>
         </div>
       </div>
 
@@ -144,11 +146,11 @@
   </section>
 
   <!-- Section 3 -->
-  <section class="hero-section hero-section-moun">
+  <section class="hero-section hero-section-moun hero-section-bg1">
 
     <!-- PNG overlay, below text -->
-    <img src="assets/img/snow-scape-mountains.webp" alt="Full background overlay" class="full-overlay-png" />
-    <div class="container hero-content text-left">
+    <img src="assets/img/snow-scape-mountains.webp" alt="Full background overlay" class="full-overlay-png" id="hero-section-moun-img" />
+    <div class="container hero-content text-left hero-section-moun-content">
       <div class="row">
         <div class="col-lg-6 px-4 px-mobile-10">
           <h1 class="hero-title d-block d-md-none text-dark text-mob-white px-1">
@@ -166,7 +168,8 @@
             perfect for families and couples alike. From powdery slopes in the Alps to cozy resorts in the
             Rockies, we handle all the details — lifts, lodges, and lessons, so you can hit the slopes stress
             free and make unforgettable memories in the&nbsp;snow.</p>
-          <a href="#" class="btn px-4 py-3 mt-4 mx-2 text-uppercase black-btn mb-md-5 mb-3">CONTACT US</a>
+          <!-- <a href="#" class="btn px-4 py-3 mt-4 mx-2 text-uppercase black-btn mb-md-5 mb-3">CONTACT US</a> -->
+          <a class="btn" href="#"><span data-hover="Rotating button">CONTACT US</span></a>
         </div>
       </div>
 
@@ -175,12 +178,12 @@
   </section>
 
   <!-- Section 4 -->
-  <section class="hero-section hero-section-safari">
+  <section class="hero-section hero-section-safari hero-section-bg2">
 
     <!-- Left overlay PNG -->
-    <img src="assets/img/safari-scape-tree.png" alt="Left overlay" class="full-overlay-png left-png" />
+    <img src="assets/img/safari-scape-tree.png" alt="Left overlay" class="full-overlay-png left-png" id="hero-section-safari-img"/>
 
-    <div class="container hero-content text-left">
+    <div class="container hero-content text-left hero-section-safari-content">
       <div class="row">
         <div class="col-lg-6 offset-lg-6 ml-auto px-md-0 px-mobile-10">
           <h1 class="hero-title d-block d-md-none px-1">
@@ -199,7 +202,8 @@
             and budget, perfect for families and couples seeking a wild escape. From spotting the Big Five in
             the African savanna to exploring lush jungles, we handle every detail; lodges, guides, and
             itineraries — so you can immerse yourself in nature’s wonders&nbsp;hassle-free.</p>
-          <a href="#" class="btn px-4 py-3 mt-4 mx-2 text-uppercase yellow-btn mb-md-5 mb-3">CONTACT US</a>
+          <!-- <a href="#" class="btn px-4 py-3 mt-4 mx-2 text-uppercase yellow-btn mb-md-5 mb-3">CONTACT US</a> -->
+          <a class="btn" href="#"><span data-hover="Rotating button">CONTACT US</span></a>
         </div>
       </div>
 
@@ -281,47 +285,7 @@
 
   </script>
 
-
-<script>
-  gsap.registerPlugin(ScrollTrigger);
-
-  // Background - slowest
-  gsap.to(".hero-section-sea", {
-    y: -150,
-    ease: "power1.out",
-    scrollTrigger: {
-      trigger: ".hero-section-sea",
-      start: "top top",
-      end: "bottom top",
-      scrub: 0.8
-    }
-  });
-
-  // Text content - medium speed
-  gsap.to("#sea-text-content", {
-    y: -250,
-    ease: "power1.out",
-    scrollTrigger: {
-      trigger: ".hero-section-sea",
-      start: "top top",
-      end: "bottom top",
-      scrub: 0.8
-    }
-  });
-
-  // Tree image - fastest
-  gsap.to("#sea-tree-image", {
-    y: -500,
-    ease: "power1.out",
-    scrollTrigger: {
-      trigger: ".hero-section-sea",
-      start: "top top",
-      end: "bottom top",
-      scrub: 0.8
-    }
-  });
-</script>
-
+<script src="assets/js/gsap.js"></script>
 
 
 

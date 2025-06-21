@@ -1,0 +1,65 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Overlapping Sections with GSAP</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Bootstrap 5 CDN-->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    .section {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3rem;
+      color: #fff;
+    }
+    .section-1 {
+      background: url('assets/img/sea-plamtree.jpg') no-repeat center center/cover;
+    }
+    .section-2 {
+      background: url('assets/img/snow-mountain.jpg') no-repeat center center/cover;
+      position: relative;
+      z-index: 2;
+    }
+    .spacer {
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="section section-1">
+    Section 1
+  </section>
+
+  <section class="section section-2">
+    Section 2
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>  
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to('.section-2', {
+      yPercent: -100,
+      ease: 'none',
+      scrollTrigger: {
+        trigger: '.section-2',
+        start: 'top bottom',
+        end: 'top top',
+        scrub: true,
+      },
+    });
+  </script>
+</body>
+</html>

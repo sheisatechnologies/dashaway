@@ -125,7 +125,7 @@
    background-size: cover;
 
    color: white;
-   height: 1000px;
+   height: 1100px;
    /* Fixed height */
  }
 
@@ -729,5 +729,70 @@ line-height: 26px;
   height: 100%;
   border: none;
 }
+
+
+
+/* The Button Container */
+.btn {
+  display: inline-block;
+  font-family: 'Work Sans', sans-serif; /* Your original font */
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  color: #F8E928;
+  text-decoration: none;
+
+  /* Maintain the original dimensions */
+  width: 100%;           /* Responsive */
+  max-width: 210px;
+  max-height: 53px;
+
+  perspective: 1000px;    /* Enables the 3D effect */
+  border-radius: 0px;
+}
+
+/* The Inner Text Element */
+.btn span {
+  display: inline-block;
+  padding: 1em 0;           /* Vertical padding inside the button */
+  position: relative;
+  background: #000000;
+  transform-origin: 50% 0 0;
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) translateY(0);
+  transition: transform 250ms ease, background 250ms ease;
+  width: 100%;              /* Fills the button */
+}
+
+/* The Hover Text Element (appears when flipped) */
+.btn span::before {
+  position: absolute;
+  content: 'CONTACT US';
+  top: 100%;
+  left: 0;
+  width: 100%;              /* Match parent width */
+  padding: 1em 0;
+  background: #000;
+  color: #F8E928;
+  transform-origin: 50% 0 0;
+  transform: rotateX(-90deg) translateY(0);
+  transition: transform 250ms ease, background 250ms ease;
+}
+
+/* Hover Effect */
+.btn:hover span {
+  background: #000;
+  transform: rotateX(90deg) translateY(-2.2em);
+}
+.btn:hover span::before {
+  background: #F8E928;;
+  color: #000;
+}
+
+
+
 
 
