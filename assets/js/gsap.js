@@ -17,7 +17,7 @@ gsap.to(".hero-section-sea", {
 gsap.fromTo('#sea-text-content',
   { y: -60 },            // 👈 START position (element will start 100px down)
   {
-    y: -1050,
+    y: -750,
     ease: 'power1.out',
     scrollTrigger: {
       trigger: 'body',
@@ -33,7 +33,7 @@ gsap.fromTo('#sea-text-content',
 gsap.fromTo('#sea-tree-image',
   { y: -10 },            // 👈 START position (element will start 100px down)
   {
-    y: -600,
+    y: -1100,
     ease: 'power1.out',
     scrollTrigger: {
       trigger: 'body',
@@ -148,6 +148,9 @@ gsap.fromTo('#hero-section-moun-img',
     },
   }
 );
+
+
+
 
 
 
