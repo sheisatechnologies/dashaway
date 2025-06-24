@@ -33,20 +33,28 @@
   }
 
   .hero-section-sea {
-    background-image: url(../img/sea-scape-mobile.jpg) !important;
-    height: 667px !important;
+    background-image: url(../img/mobile-bg/sea-scape-mobile.jpg) !important;
+    height: 700px !important;
   }
 
   .hero-section-city {
-    background-image: url(../img/city-scape-mobile.jpg) !important;
+    background-image: url(../img/mobile-bg/city-scape-mobile.jpg) !important;
+    height: 700px !important;
   }
 
   .hero-section-moun {
-    background-image: url(../img/snow-scape-mobile.jpg) !important;
+    background-image: url(../img/mobile-bg/snow-scape-mobile.jpg) !important;
+    height: 700px !important;
   }
 
   .hero-section-safari {
-    background-image: url(../img/safari-scape-mobile.jpg);
+    background-image: url(../img/mobile-bg/safari-scape-mobile.jpg);
+    height: 700px !important;
+  }
+
+
+  .hero-section-contact {
+   background-image: url(../img/mobile-bg/contact-mobile.jpg) !important;
   }
 
 
@@ -109,7 +117,7 @@
   }
 
   .left-png {
-    left: -49px;
+    left: -147px;
     top: 50% !important;
   }
 
@@ -282,4 +290,7 @@
     padding-left: 35px !important;
     padding-right: 35px !important;
   }
+
+  
 }
+
