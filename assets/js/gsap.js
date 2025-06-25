@@ -101,7 +101,7 @@ ScrollTrigger.matchMedia({
       },
     });
 
-    gsap.fromTo('#hero-section-moun-img', { y: 1400 }, {
+    gsap.fromTo('#hero-section-moun-img', { y: 800 }, {
       y: -300,
       ease: 'power1.out',
       scrollTrigger: {
