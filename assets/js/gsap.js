@@ -73,6 +73,11 @@ ScrollTrigger.matchMedia({
       },
     });
 
+
+    
+
+    
+    
     // MOUNTAIN
     gsap.to(".hero-section-moun", {
       y: -950,
@@ -96,8 +101,8 @@ ScrollTrigger.matchMedia({
       },
     });
 
-    gsap.fromTo('#hero-section-moun-img', { y: 800 }, {
-      y: -600,
+    gsap.fromTo('#hero-section-moun-img', { y: 1400 }, {
+      y: -300,
       ease: 'power1.out',
       scrollTrigger: {
         trigger: 'body',
@@ -107,8 +112,9 @@ ScrollTrigger.matchMedia({
       },
     });
 
-    // SAFARI
-    gsap.to(".hero-section-safari", {
+
+     // MOUNTAIN
+     gsap.to(".hero-section-safari", {
       y: -1250,
       ease: "power1.out",
       scrollTrigger: {
@@ -118,6 +124,9 @@ ScrollTrigger.matchMedia({
         scrub: true,
       },
     });
+
+    
+  
 
     gsap.fromTo('.hero-section-safari-content', { y: 4500 }, {
       y: -1050,
