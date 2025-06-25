@@ -106,7 +106,7 @@
    position: relative;
    background-size: cover;
 
-   min-height: 100vh;
+   /* min-height: 100vh; */
    color: white;
    display: flex;
    align-items: center;
@@ -204,7 +204,7 @@
    object-fit: contain;
    pointer-events: none;
    z-index: 1;
-   opacity: 0.6;
+   /* opacity: 0.6; */
    /* adjust transparency */
  }
 
@@ -227,7 +227,7 @@
  .left-png {
    left: -145px;
    top: 50%;
-   opacity: 0.9;
+   /* opacity: 0.9; */
    /* increase opacity for darker look */
    filter: brightness(0.4);
    /* darken the image */
