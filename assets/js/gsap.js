@@ -234,7 +234,7 @@ ScrollTrigger.matchMedia({
     });
 
     gsap.fromTo('.hero-section-city-content', { y: 200 }, {
-      y: -500,
+      y: -300,
       ease: 'power1.out',
       scrollTrigger: {
         trigger: 'body',
@@ -267,8 +267,8 @@ ScrollTrigger.matchMedia({
       },
     });
 
-    gsap.fromTo('.hero-section-moun-content', { y: 700 }, {
-      y: -500,
+    gsap.fromTo('.hero-section-moun-content', { y: 300 }, {
+      y: -250,
       ease: 'power1.out',
       scrollTrigger: {
         trigger: 'body',
@@ -301,8 +301,8 @@ ScrollTrigger.matchMedia({
       },
     });
 
-    gsap.fromTo('.hero-section-safari-content', { y: 2000 }, {
-      y: -500,
+    gsap.fromTo('.hero-section-safari-content', { y: 500 }, {
+      y: -100,
       ease: 'power1.out',
       scrollTrigger: {
         trigger: 'body',
