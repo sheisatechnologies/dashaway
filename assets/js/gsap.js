@@ -1,9 +1,23 @@
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.matchMedia({
 
   // ✅ Desktop: screen width > 700px
   "(min-width: 701px)": function () {
+
+
+    gsap.to('.element', {
+      y: '-100vh',
+      scrollTrigger: {
+        trigger: '.element',
+        pin: true,
+        scrub: true,
+      },
+    });
+    
+
 
     // SEA
     gsap.to(".hero-section-sea", {
@@ -51,8 +65,8 @@ ScrollTrigger.matchMedia({
       },
     });
 
-    gsap.fromTo('.hero-section-city-content', { y: 400 }, {
-      y: -1050,
+    gsap.fromTo('.hero-section-city-content', { y: 200 }, {
+      y: -400,
       ease: 'power1.out',
       scrollTrigger: {
         trigger: 'body',
@@ -90,8 +104,8 @@ ScrollTrigger.matchMedia({
       },
     });
 
-    gsap.fromTo('.hero-section-moun-content', { y: 1400 }, {
-      y: -1050,
+    gsap.fromTo('.hero-section-moun-content', { y: 260 }, {
+      y: -300,
       ease: 'power1.out',
       scrollTrigger: {
         trigger: 'body',
@@ -128,8 +142,8 @@ ScrollTrigger.matchMedia({
     
   
 
-    gsap.fromTo('.hero-section-safari-content', { y: 4500 }, {
-      y: -1050,
+    gsap.fromTo('.hero-section-safari-content', { y: 360 }, {
+      y: -200,
       ease: 'power1.out',
       scrollTrigger: {
         trigger: 'body',
@@ -150,7 +164,25 @@ ScrollTrigger.matchMedia({
       },
     });
 
+
+    
+       // MOUNTAIN
+       gsap.to(".hero-section-footer", {
+        y: -1450,
+        ease: "power1.out",
+        scrollTrigger: {
+          trigger: "body",
+          start: "top top",
+          end: "bottom bottom",
+          scrub: true,
+        },
+      });
+
+
   },
+
+
+  
 
   // ✅ Mobile: screen width <= 700px
   "(max-width: 700px)": function () {
