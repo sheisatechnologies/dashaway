@@ -228,6 +228,7 @@
  .left-png {
    left: -145px;
    top: 50%;
+   
    /* opacity: 0.9; */
    /* increase opacity for darker look */
    filter: brightness(0.4);
@@ -235,9 +236,16 @@
  }
 
  .left-png-city {
-   top: 50% !important;
+   max-width: 317px;
+   height: auto;
+   top: 30% !important;
    filter: brightness(0.4);
    /* darken the image */
+ }
+
+ .left-png-safari{
+  top: 28%;
+  left: -138px;
  }
 
 
