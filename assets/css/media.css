@@ -85,7 +85,7 @@
   }
 
   .hero-icon-left {
-    margin-left: 75px;
+    margin-left: 61px;
   }
 
   .hero-icon-left-con {
@@ -125,6 +125,11 @@
 
   .left-png-city {
     left: -64px;
+    top: 50% !important;
+  }
+
+  .left-png-safari {
+    left: -158px;
     top: 50% !important;
   }
 
