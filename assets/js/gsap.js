@@ -168,7 +168,7 @@ ScrollTrigger.matchMedia({
     
        // MOUNTAIN
        gsap.to(".hero-section-footer", {
-        y: -1400,
+        y: -1450,
         ease: "power1.out",
         scrollTrigger: {
           trigger: "body",
