@@ -221,7 +221,7 @@
 
    z-index: 1;
    /* behind text */
-   object-fit: contain;
+   object-fit: cover;
  }
 
  /* Left overlay: align to left */
