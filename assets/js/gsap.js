@@ -168,7 +168,7 @@ ScrollTrigger.matchMedia({
     
        // MOUNTAIN
        gsap.to(".hero-section-footer", {
-        y: -1400,
+        y: -1600,
         ease: "power1.out",
         scrollTrigger: {
           trigger: "body",
@@ -233,8 +233,8 @@ ScrollTrigger.matchMedia({
       },
     });
 
-    gsap.fromTo('.hero-section-city-content', { y: 300 }, {
-      y: -550,
+    gsap.fromTo('.hero-section-city-content', { y: 100 }, {
+      y: -300,
       ease: 'power1.out',
       scrollTrigger: {
         trigger: 'body',
@@ -323,6 +323,23 @@ ScrollTrigger.matchMedia({
       },
     });
 
+
+     // MOUNTAIN
+     gsap.to(".hero-section-footer", {
+      y: -610,
+      ease: "power1.out",
+      scrollTrigger: {
+        trigger: "body",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: true,
+      },
+    });
+
+
   }
+
+
+
 
 });
