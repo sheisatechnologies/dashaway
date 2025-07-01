@@ -209,6 +209,33 @@
    /* adjust transparency */
  }
 
+ .full-overlay-png-moun {
+  position: absolute;
+  top: 65%;
+  right: 0;
+  transform: translateY(-50%);
+  height: 100%;
+  width: auto;
+  /* width auto to keep aspect ratio */
+  object-fit: contain;
+  pointer-events: none;
+  z-index: 1;
+  /* opacity: 0.6; */
+  /* adjust transparency */
+}
+
+ .full-overlay-png-moun {
+
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  z-index: 1;
+  object-fit: cover;
+
+}
+
+
  /* Common styles for PNG overlays */
  .full-overlay-png {
    position: absolute;
@@ -221,9 +248,10 @@
 
    z-index: 1;
    /* behind text */
-   object-fit: cover;
+   object-fit: contain;
  }
 
+ 
  /* Left overlay: align to left */
  .left-png {
    left: -145px;
