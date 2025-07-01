@@ -65,8 +65,8 @@ ScrollTrigger.matchMedia({
       },
     });
 
-    gsap.fromTo('.hero-section-city-content', { y: 400 }, {
-      y: -900,
+    gsap.fromTo('.hero-section-city-content', { y: 200 }, {
+      y: -580,
       ease: 'power1.out',
       scrollTrigger: {
         trigger: 'body',
@@ -104,8 +104,8 @@ ScrollTrigger.matchMedia({
       },
     });
 
-    gsap.fromTo('.hero-section-moun-content', { y: 900 }, {
-      y: -700,
+    gsap.fromTo('.hero-section-moun-content', { y: 360 }, {
+      y: -200,
       ease: 'power1.out',
       scrollTrigger: {
         trigger: 'body',
