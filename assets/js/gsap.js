@@ -105,7 +105,7 @@ ScrollTrigger.matchMedia({
     });
 
     gsap.fromTo('.hero-section-moun-content', { y: 360 }, {
-      y: -200,
+      y: -350,
       ease: 'power1.out',
       scrollTrigger: {
         trigger: 'body',
@@ -143,7 +143,7 @@ ScrollTrigger.matchMedia({
   
 
     gsap.fromTo('.hero-section-safari-content', { y: 360 }, {
-      y: -200,
+      y: -250,
       ease: 'power1.out',
       scrollTrigger: {
         trigger: 'body',

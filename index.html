@@ -271,6 +271,8 @@
     </div>
     </div>
     </div>
+
+    <div class="scroll-lock-trigger">End of Page</div>
   </footer>
 
 
@@ -296,6 +298,34 @@
 
 <script src="assets/js/gsap.js"></script>
 
+<script>
+  let lastScroll = window.scrollY;
+
+  function isFullyVisible(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.bottom <= window.innerHeight
+    );
+  }
+
+  const footer = document.querySelector('.footer');
+
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.scrollY;
+
+    if (isFullyVisible(footer)) {
+      // If user scrolls down → block
+      if (currentScroll > lastScroll) {
+        window.scrollTo(0, lastScroll);
+      } else {
+        lastScroll = currentScroll; // allow scroll up
+      }
+    } else {
+      lastScroll = currentScroll; // normal behavior
+    }
+  });
+</script>
 
 
 
