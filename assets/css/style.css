@@ -268,7 +268,7 @@
    max-width: 317px;
    height: auto;
    top: 30% !important;
-   filter: brightness(0.4);
+   /* filter: brightness(0.4); */
    /* darken the image */
  }
 
